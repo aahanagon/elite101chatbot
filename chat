@@ -1,0 +1,31 @@
+print("Welcome MnH! Im Aahana, the chatbot that will be asissting you with your refund today.")
+name=input("What is your name? ")
+amount=input("Hello "+name+", what is the number of items you wish to return?")
+if amount>1: 
+  item_names=input("Great! What are the names of the items? Please seperate each item name with a comma.")
+if amount=1:
+  item_name=input("Great! What is the name of the item?")
+else:
+  print("This is not a valid answer.")
+if amount>1: 
+  order_numbers=input("Awsome! What is the order number of each item? Please seperate each order number with a comma.")
+if amount=1:
+  item_name=input("Great! What is the order number?")
+else:
+print("This is not a valid answer.")
+reason=input("Here at MnH, customer satisfaction is our main goal! Please provide us with the reason of return to help us in the future.")
+print("Thank you for helping us! Lastly, please choose from the menu down below by entering the selected proof of purchase")  
+choice=input("Credit Card\n Debit Card\n Receipt\n Rewards Program")
+
+if choice=="Credit Card":
+    credit=input("Please enter the last 4 digits of the credit card used")
+elif choice=="Debit Card":
+    debit=input("Please enter the last 4 digits of the debit card used.")
+elif choice=="Receipt":
+    receipt=input("Please enter the receipt number. ")
+elif choice=="Rewards Program":
+    program=input("Please enter the email used for the rewards program.")
+else:
+  print("This is not a valid form of proof of purchase")
+print("Your return has been processed, Have a good day!")
+
